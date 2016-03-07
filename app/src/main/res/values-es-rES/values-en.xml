@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yep</string>
+    <string name="yep">YEP!</string>
+    <string name="do_i_know_you">TE CONOZCO?</string>
+    <string name="yep1">Yep!</string>
+    <string name="do_i_know_you2">TE CONOZCO?</string>
+    <string name="login1">ENTRAR</string>
+    <string name="have_an_account_sign_up_here">¿Tienes una cuenta ? Suscrito?</string>
+
+
+</resources>

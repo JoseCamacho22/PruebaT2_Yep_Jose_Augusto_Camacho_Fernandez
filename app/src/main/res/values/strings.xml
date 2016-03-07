@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Yep</string>
+    <string name="yep">YEP!</string>
+    <string name="do_i_know_you">DO I KNOW YOU?</string>
+    <string name="yep1">Yep!</string>
+    <string name="do_i_know_you2">DO I KNOW YOU?</string>
+    <string name="login1">LOGIN</string>
+    <string name="have_an_account_sign_up_here">Have an account?SIGN UP here!</string>
+</resources>

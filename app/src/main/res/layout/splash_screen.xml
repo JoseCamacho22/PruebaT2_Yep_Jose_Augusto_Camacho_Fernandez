@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#795548">
+
+
+    <TextView
+        android:text="@string/yep"
+        android:id="@+id/title"
+        style="@style/Splash_title" />
+
+    <TextView
+        android:text="@string/do_i_know_you"
+        android:id="@+id/subtitle"
+        style="@style/Splash_subtitle" />
+
+
+</RelativeLayout>

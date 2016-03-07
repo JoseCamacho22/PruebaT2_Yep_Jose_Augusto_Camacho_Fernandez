@@ -1,0 +1,169 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="YepTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionBarItemBackground">@drawable/selectable_background_yep</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Yep</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Yep</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Yep</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Yep</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Yep</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_yep</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_yep</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Yep</item>
+
+        <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.Yep.Widget</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Yep" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_yep</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_yep</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_yep</item>
+        <item name="progressBarStyle">@style/ProgressBar.Yep</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Yep" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_yep</item>
+        <item name="progressBarStyle">@style/ProgressBar.Yep</item>
+    </style>
+
+    <style name="PopupMenu.Yep" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_yep</item>
+    </style>
+
+    <style name="DropDownListView.Yep" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_yep</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Yep" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_yep</item>
+    </style>
+
+    <style name="DropDownNav.Yep" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_yep</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_yep</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_yep</item>
+    </style>
+
+    <style name="ProgressBar.Yep" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_yep</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Yep" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_yep</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Yep.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Yep</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Yep</item>
+    </style>
+
+
+
+    <style name="YepTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AuthFieldContainer">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+        <style name="AuthEditText" parent="android:Widget.Holo.Light.EditText">
+            <item name="android:ems">10</item>
+            <item name="android:textColorHint">@color/light_gray</item>
+            <item name="android:textSize">17sp</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+
+        <style name="AuthButton" parent="android:Widget.Holo.Light.Button">
+            <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+            <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+            <item name="android:textColor">@color/text_color</item>
+            <item name="android:textSize">13sp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/editTextLayout</item>
+        <item name="android:layout_alignLeft">@+id/editTextLayout</item>
+        <item name="android:layout_alignStart">@+id/editTextLayout</item>
+        <item name="android:layout_alignRight">@+id/editTextLayout</item>
+        <item name="android:layout_alignEnd">@+id/editTextLayout</item>
+        <item name="android:background">#f8b704</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:nestedScrollingEnabled">false</item>
+    </style>
+
+    <style name="Splash_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">45dp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">119dp</item>
+        <item name="android:autoText">false</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="Splash_subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:layout_below">@+id/title</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">#fefdfd</item>
+    </style>
+
+    <style name="textview1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="textview2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_below">@+id/title</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="style3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/button</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">36dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+</resources>

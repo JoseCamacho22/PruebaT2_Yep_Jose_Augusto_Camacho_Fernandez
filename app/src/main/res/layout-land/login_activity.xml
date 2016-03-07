@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#795548"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yep!"
+        android:id="@+id/title"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DO I KNOW YOU?"
+        android:id="@+id/subtitle"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+    <requestFocus/>
+
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthFieldContainer"
+        android:layout_below="@+id/subtitle">
+
+        <EditText
+            android:id="@+id/usernameField"
+            style="@style/AuthEditText"
+            android:hint="username"
+            android:layout_height="55dp"
+            android:layout_width="match_parent">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordField"
+            style="@style/AuthEditText"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:text="LOGIN"
+        android:id="@+id/button"
+        android:onClick="onclickLogin"
+        style="@style/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="528dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have an account?SIGN UP here!"
+        android:id="@+id/textView"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.53"
+        android:paddingTop="1dp" />
+
+
+</LinearLayout>
+

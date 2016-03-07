@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#795548">
+
+
+    <TextView
+        android:text="@string/yep1"
+        android:id="@+id/title"
+        style="@style/textview1" />
+
+    <TextView
+        android:text="@string/do_i_know_you2"
+        android:id="@+id/subtitle"
+        style="@style/textview2" />
+    <requestFocus/>
+
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthFieldContainer"
+        android:layout_below="@+id/subtitle">
+
+        <EditText
+            android:id="@+id/usernameField"
+            style="@style/AuthEditText"
+            android:hint="username"
+            android:layout_height="55dp"
+            android:layout_width="match_parent">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordField"
+            style="@style/AuthEditText"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:text="@string/login1"
+        android:id="@+id/button"
+        android:onClick="onclickLogin"
+        style="@style/button" />
+
+    <TextView
+        android:text="@string/have_an_account_sign_up_here"
+        android:id="@+id/textView"
+        style="@style/style3" />
+
+
+</RelativeLayout>
